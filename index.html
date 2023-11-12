@@ -1,0 +1,123 @@
+<!-- index indicates the homepage of the website -->
+<!-- boilerplate template -->
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=device-width">
+        <title>Nicholas Wang Personal Website</title>
+        <link rel="stylesheet" href="./resources/css/index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Navbar section using Bootstrap -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">NW</span>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item active"><a href="#work" class="nav-link">Work Experience</a></li>
+                    <li class="nav-item active"><a href="#project" class="nav-link">Projects</a></li>
+                    <li class="nav-item active"><a href="#hobbies" class="nav-link">Hobbies</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Banner Section -->
+        <div class="banner">
+            <h1>hi! nic here!</h1>
+            <img id="profilepic" src="./resources/images/Profilepic.PNG">
+            <p>I'm passionate about improving and optimizing processes to increase <strong>efficiency</strong>, 
+                <strong>reliability</strong>, and <strong>sustainability</strong>.</p>       
+        </div>
+
+        <!-- About section -->
+        <div id="about">
+            <h2>About Me</h2>
+            <div class="about_section">
+                <img id="grad" src="./resources/images/Grad.jpg">
+                <p>My name is Nicholas Wang and I studied chemical engineering at UC Irvine with a specialization on sustainability and 
+                    material science. I enjoy innovating sustainable technologies. Examples include batteries, hydrogen fuel
+                    cells, and solar panels. I'm also extremely interested in software and how it plays a role in supporting these physical
+                    products.</p>
+            </div>
+        </div>
+
+        <!-- Work Experience Section -->
+        <div id="work">
+            <h2>Work Experience</h2>
+            <h3>Tesla</h3>
+                <h4>Engineering Technician - Cathode Materials and Manufacturing</h4>
+                <ul>
+                    <li>Operated processes such as mixing, baking, washing, coating, and drying with over 10 pieces of equipment to produce 
+                        high-quality cathode materials of up to 5 kg batches</li>
+                    <li>Developed and evaluated standard operating procedures (SOP) for equipment used in processing cathode materials to 
+                        maintain clear communication with technicians and engineers for an increase in safety</li>
+                </ul>
+            <h3>SoCalGas</h3>
+                <h4>Engineering Intern - Emissions Strategy Program</h4>
+                <ul>
+                    <li>Developed and published documentation summarizing the methane emission calculation methodologies employed 
+                        in California Senate Bill (SB) 1371 Annual Emissions Reports</li>
+                    <li>Quality assured (QA) and quality controlled (QC) data and filed documentation to support the preparation 
+                        of comprehensive methane emission reports submitted to the California Public Utilities Commission (CPUC)</li>
+                </ul>
+            <h3>Sasmaz Research Lab</h3>
+                <h4>Undergraduate Researcher</h4>
+                <ul>
+                    <li>Researched and conducted an induction heating method utilizing copper coils and electricity 
+                        (green technology) to synthesize butadiene from ethanol renewably through a heterogeneous catalyst</li>
+                    <li>Experimented with different ferromagnetic materials to improve catalytic efficiency and provide 
+                        accurate temperature readings for even heat transfer distribution in the packed-bed reactor</li>
+                </ul>
+            <h3>American Institue of Chemical Engineers at UC Irvine</h3>
+                <h4>President</h4>
+                <ul>
+                    <li>Direct the organization to provide research and job opportunities for 50+ chemical engineering 
+                        undergraduates</li>
+                    <li>Spearhead events for meetings occurring every other week regarding resumes, interview practice, 
+                        and faculty meet-ups for members</li>
+                </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="project">
+            <h2>Projects</h2>
+                <h3>ChemE Car</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MhwguDR-Euw?si=mU54Zi4xTn7uCl3i" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                <h3>SOLIDWORKS Model of the Time Machine from <em>Meet the Robinsons</em></h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kJmUTgWXACw?si=SiR2okEQWKkawyqx" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div id="hobbies">
+            <h2>Hobbies</h2>
+                <h3>Photography</h3>
+                    <ul>
+                        <li><img id="peach" src="./resources/images/Peach.JPG"></li>
+                        <li><img id="byodo" src="./resources/images/byodo.jpg"></li>
+                    </ul>
+                <h3>Taiko</h3>
+                    <img id="taiko" src="./resources/images/Taiko.jpg">
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <button class="celebration">Thank you for viewing! Click for a celebration!</button>
+            <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+            <script>
+                document.getElementsByClassName("celebration")[0].addEventListener("click", () => {
+                    confetti();
+                })
+            </script>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/nicholaswang128/">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@nicholaswang3316/featured">YouTube</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
