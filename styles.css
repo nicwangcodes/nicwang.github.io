@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+}
+
+header p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: darkblue;
+}
+
+table {
+    border: 2px solid darkblue;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+thead {
+    background-color: aquamarine;
+}
+
+td, th {
+    border-top: 1px solid darkblue;
+    border-right: 1px solid darkblue;
+}
+
+.tag, .attribute {
+    font-family: monospace;
+    background-color: beige;
+    text-align: center;
+}
